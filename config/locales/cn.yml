@@ -1,0 +1,231 @@
+# Ernest Bursa
+# http://ernest.bzdury.pl
+cn:
+  general:
+    name: 名称
+    desc: 描述信息
+    back: 返回
+    edit: 编辑
+    show: 显示
+    view: 查看
+    admin: 管理
+    general: 通用
+    add: 增加
+    new: 新建
+    create: 创建
+    update: 更新
+    destroy: 清除
+    delete: 删除
+    yes: 是
+    no: 否
+    next: 下一条
+    prev: 上一条
+    next_page: 下一页
+    prev_page: 上一页
+    or: 或者
+  phrase:
+    cant_blank: 不能为空
+    confirm_save: 确认保存 %{somethin} ?
+    confirm_delete: "确认删除资源: %{something} ?"
+    are_you_sure: 你确认要进行此项操作吗 ?
+  site:
+    sidebar: 工具栏
+    needhelp: 获取帮助和反馈
+    description: 欢迎来到教学资源管理系统！
+    general: 通用
+    dashboard: 仪表板
+    support_info: 支持信息
+    course_admin: 课程管理
+    question_admin: 问题管理
+    my_course: 我的课程
+    profile: 个人信息
+    admin: 管理面板
+    dashboard: 应用面板
+  profile:
+    title: 概况
+    details: 详情
+    me: 我的信息
+    profile: 概况
+    avatar_change: 更改化身
+    attributes:
+      language: 语言
+      real_name: 实名
+      location: 位置
+      website: Web站点
+      login: 登录
+      email: 电子邮件
+      password: 密码
+      created_at: 创建于
+      updated_at: 更新于
+    login:
+      new: 重新登录
+      text: "请重新登录."
+      set: 保持登录
+    actions:
+      update: 更新信息
+      update_email: 更新电子邮件
+      change_password: 修改密码
+      delete_account: 删除用户
+      edit: 编辑信箱
+      set_login: 设置登录
+    login:
+      title: 登录
+      text:
+        signed_with: 请使用你的帐号登录
+        sign_with_other: 使用另一个帐号登录
+        sign_using: 正在使用的帐号是
+  admin:
+    dashboard: 
+      title: 管理
+      about:
+        title: '您已经作为管理员登录.'
+        text: '.'
+    settings: 
+      title: 设置
+      user: 用户
+      role: 角色
+      organization: 组织
+      application: 系统设置
+      save: 保存设置
+      options:
+        manage: " %{app} 设置管理"
+    users:
+      title: 用户管理
+      lname: 登录名称
+      sname: 显示名称
+      purge: 清除
+      recover: 恢复
+      grant_role: 赋予了 %{role} 角色
+      revoke_role: 取消了 %{role} 角色
+      send_password_mail: 已经向您注册电子邮件地址发送了重置密码的邮件
+      edit_user: 编辑用户
+      create_new: 创建新用户
+      create_success: 用户已成功创建
+      options:
+        manage: "管理用户帐户"
+        new: "创建"
+        activate: "激活"
+        suspend: "停用"
+        delete: "删除"
+        roles: "角色管理"
+        send_password: "发送密码"
+      show:
+        title: "用户管理 %{login}"
+        status: "状态: %{status}"
+        grant: "赋予角色 %{role}"
+        take: "取消角色 %{role}"
+      index:
+        display:
+          zero: 无用户
+          one: 一个用户
+          few: %{count} 个用户
+          other: %{count} 个用户
+        operation: 操作
+        create_user: 创建新用户
+        purge_all: 清除所有已删除用户
+        search: 搜索
+        search_by: 电邮 登录名...
+        filtr: 用户筛选
+        options:
+          all: 全部
+          active: 已激活
+          suspended: 已锁定
+          pending: 待激活
+          deleted: 已删除
+          admin: 管理员
+          teacher: 教师
+          student: 学生
+    delayed_jobs:
+      title: "待办任务"
+      attributes:
+        id: ID
+        priority: 优先级
+        attempts: 尝试次数
+        run_at: 运行于
+        locked_at: 锁定于
+        created_at: 创建于
+    announcements:
+      title: 通告
+      manage: 管理通告
+      new: 新建通告
+      edit: 编辑通告
+    commits:
+      title: "指派"
+    orgs:
+      title: 组织单位管理
+      edit_school: 编辑学校信息
+      school: 学校
+      grade: 年级
+      class: 班级
+      grade_list: 年级列表
+      class_list: 班级列表
+      new_grade: 新建年级
+      new_class: 新建班级
+      add_class: 增加班级
+      create_grade: 创建年级
+      create_class: 创建班级
+      edit_grade: 编辑年级
+      edit_class: 编辑班级
+      update_grade: 更新年级
+      update_class: 更新班级
+      grade_year: 毕业年份
+      class_member: 班级成员
+      school_name: 学校名称
+      desc: 描述信息
+      address: 地址
+      snumber: 学号
+      tnumber: 教号
+      create_student: 增加
+      new_student: 创建或增加学生
+      add_student_success: 学生信息添加成功
+      add_teacher_success: 教师信息添加成功
+      update_school_success: 学校信息成功更新
+      create_grade_success: 年级信息成功创建
+      create_class_success: 班级信息成功创建
+      update_grade_success: 年级信息成功更新
+      update_class_success: 班级信息成功更新
+    roles:
+      new: "新建用户角色"
+      name: "名称"
+      desc: "描述信息"
+      create: "创建"
+      rights: "权限"
+      users: "成员用户"
+      create_success: 用户角色成功创建
+      manage: 角色管理
+      adduser: 向角色增加用户
+      members: 的角色成员
+      desc: 描述信息
+      rights: 角色权限
+      click_remove: 点击移除
+    options:
+      user_managment: '用户管理'
+      administration: "管理"
+      my_accout: "我的帐户"
+  session:
+    system_login: 系统登录
+    login_info: "登录信息"
+    log_in: "登录"
+    sign_up: "注册"
+    log_out: "注销"
+    username: "用户名或电子邮件"
+    password: "密码"
+    remember: "记住登录帐户"
+    forgot_password: "忘记密码?"
+    confirmation_instructions: "未收到确认指导?"
+    unlock_instructions: "未收到解锁指导?"
+  options:
+    save_changes: 保存更改
+    save: 保存
+    cancel: 取消
+    destroy: 清除
+    create: 创建
+    create_new: 新建
+    edit: 编辑
+    edit_record: 编辑记录
+  flash:
+    update_success: 条目已成功更新
+    destroy_success: 条目已成功清除
+    create_success: 条目已成功创建
+    create_error: 条目创建失败
+    update_error: 条目更新失败

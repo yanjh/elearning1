@@ -1,0 +1,26 @@
+<% content_for :header do -%> <%= t('admin.announcements.title')%> <% end -%>
+
+<% content_for :sidebar do -%>
+	<h2><%= t("admin.announcements.new") %></h2>
+	
+	<%= simple_form_for(@announcement,:url => admin_announcements_path ) do |f| %>
+		<%= render :partial => 'form', :locals => {:f => f}%>
+	<% end -%>
+	
+<% end -%>
+
+<table class="index">
+  <tr>
+    <th><%= t('activerecord.attributes.announcement.headline')%>/<%= t('activerecord.attributes.announcement.message')%></th>
+    <th><%= t('activerecord.attributes.announcement.starts_at')%>/<%= t('activerecord.attributes.announcement.ends_at')%></th>
+  </tr>
+
+<% @announcements.each do |announcement| %>
+  <tr>
+    <td><%=h announcement.headline %><br><%=h announcement.message %></td>
+    <td><%=h announcement.starts_at %><br><%=h announcement.ends_at %></td>
+    <td><%= link_to t('general.edit'), edit_admin_announcement_path(announcement) %></td>
+    <td><%= link_to t('general.destroy'), admin_announcement_path(announcement), :confirm => t('phrase.are_you_sure'), :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
